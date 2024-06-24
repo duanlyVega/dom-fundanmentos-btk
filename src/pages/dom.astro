@@ -1,0 +1,27 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Code } from "astro:components";
+const title = "DOM - Duanly Vega Alderete";
+---
+
+<MainLayout {title}>
+  <section class="content">
+    <h2>DOM</h2>
+    <p>Contenido sobre el DOM en JavaScript.</p>
+    
+      <Code
+        code='console.log("********* Elementos del Dom ***********");'
+        lang={"js"} wrap 
+      />
+      <Code
+        code='console.log("Window Object:", window);'
+        lang={"js"} wrap
+      />
+      <Code
+      code='console.log("Document Object:", document);'
+      lang={"js"} wrap
+    />
+     
+    
+  </section>
+</MainLayout>
